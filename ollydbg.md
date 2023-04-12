@@ -34,18 +34,22 @@ HƯỚNG DẪN SỬ DỤNG OLLYDBG CHO NGƯỜI MỚI BẮT ĐẦU
 	+ R là cửa sổ References chứa thông tin về kết quả cho chức năng tìm kiếm trong Olly
 	
 	- Những chức năng không thế thiếu đó :
+	
 	![image](https://user-images.githubusercontent.com/128345171/230589235-44d58579-c26a-482a-85ed-d8cb728893cb.png)
+	
 	+ F9 là run
 	+ F2 là breakpoint
 	+ F7 là step into
 	+ F8 là step over
 	+ Ctrl +F2 là restart
-Tiến hành giải
+*Tiến hành giải
 	- Bên trên là thông tin cơ bản về các chức năng của Olly. Bây giờ sẽ bắt tay vào giải
 	- Để chạy chương trình ta bấm F9 
+	
 	![image](https://user-images.githubusercontent.com/128345171/230590450-c6054c1d-ea0a-4b17-84e3-8839bfdde1f0.png)
 	
 	- Tiếp theo nhập bừa một kí tự vào như tôi sẽ nhập tên tôi vào
+	
 	![image](https://user-images.githubusercontent.com/128345171/230591002-46309ce5-99a2-4f69-b4c5-4dae09569e3e.png)
 	
 	- Tất nhiên đó ko phải là password.Nhưng vẫn thu được một thông tin.Sẽ có thông báo là " Incorrect Password" 
