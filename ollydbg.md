@@ -7,7 +7,9 @@ HƯỚNG DẪN SỬ DỤNG OLLYDBG CHO NGƯỜI MỚI BẮT ĐẦU
 *Giới thiệu sơ về Olly
 	- Vào trang http://reversing.kr/challenge.php - chọn bài Easy Crack để làm
 	- Đầu tiên mở file Easy_CrakMe lên
+	
 	![image](https://user-images.githubusercontent.com/128345171/230576180-4da81c1c-35fa-4855-97f6-fe42a8f145ac.png)
+	
 	
 	- Ta sẽ thấy cửa sổ OllyDBG được chia làm 5 cửa sổ con:
 	+ Disassembler window: các đoạn mã của chương trình dưới dạng code asm và các dạng comment tại các dòng code đó
@@ -17,6 +19,7 @@ HƯỚNG DẪN SỬ DỤNG OLLYDBG CHO NGƯỜI MỚI BẮT ĐẦU
 	+ Stack window: thông tin về stack của chương trình 
 	
 	- Ngoài 5 cửa sổ trên thì Olly còn một số cửa sổ khác. Để ý trên thanh menu các các chức năng
+	
 	![image](https://user-images.githubusercontent.com/128345171/230585815-2afa8dee-0185-464f-8aa8-c8f0c087b320.png)
 	
 	+ L là cửa sổ Log data chứa các thông tin về các module, các import library và các plugins được load vào Olly
