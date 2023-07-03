@@ -29,6 +29,7 @@ int main() {
 }
 ``
 ![image](https://github.com/leviiec/dl/assets/128345171/146199eb-397c-4d50-87ce-b2a8a6caf052)
+
 ``353283491150`` được chuỗi này bỏ vào web``kt.gy`` sẽ ra ``RAVEN``
 FLAG:``battleCTF{RAVEN}
 
@@ -45,5 +46,23 @@ FLAG:``battleCTF{RAVEN}
 FLAG``battleCTF{Agb4_y0u_d3y_sm0k3_1gb0?}``
 
 ##MAZUI
--Đầu tiên mở file bằng IDA
+-Đầu tiên mở file bằng IDA, ko thấy gì hết nên ta debug
+![image](https://github.com/leviiec/dl/assets/128345171/66fea3df-0ed3-41d7-8ab3-b74c75e3ffc8)
+
+-Đọc Code ASM thì ta thấy XOR nên ta code thui 
+``
+from pwn import*
+from Crypto.Util.number import*
+x = 0x41EF12
+lst = [0x62209B66,0x6C24AC46,0x463ABC23,0x6D318377,0x5F0C8064,0x492FBC7A,0x652D836F]
+
+viet = []
+for i in lst:
+    viet.append(x^i)
+flag = b''
+for i in viet:
+    flag = flag + long_to_bytes(i)
+print(flag)
+``
+FLAG``battleCTF{S1mple_MovInShell}
 
