@@ -49,7 +49,8 @@ FLAG``battleCTF{Agb4_y0u_d3y_sm0k3_1gb0?}``
 - Đầu tiên mở file bằng IDA, ko thấy gì hết nên ta debug
 ![image](https://github.com/leviiec/dl/assets/128345171/66fea3df-0ed3-41d7-8ab3-b74c75e3ffc8)
 
-- Đọc Code ASM thì ta thấy XOR nên ta code thui 
+- Đọc Code ASM thì ta thấy XOR nên ta code thui
+- 
 ``
 from pwn import*
 from Crypto.Util.number import*
