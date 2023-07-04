@@ -10,11 +10,12 @@
  FLAG``battleCTF{The_path_to_light}``
 
  ##WELCOME
--Đầu tiên mở file bằng IDA lên
+
+- Đầu tiên mở file bằng IDA lên
 ![image](https://github.com/leviiec/dl/assets/128345171/17a465da-29bd-40da-8647-262a0d44b912)
 
 - Đọc code ASM ta thấy chuỗi hex ``522D1B20F6h`` cộng với chuỗi ``1EE2EEEEh`` rồi XOR với ``0AA84AAAh``
-``
+```
 #include <iostream>
 #include <cmath>
 using namespace std;
@@ -27,7 +28,7 @@ int main() {
 	cout << d;
 	return 0;
 }
-``
+```
 ![image](https://github.com/leviiec/dl/assets/128345171/146199eb-397c-4d50-87ce-b2a8a6caf052)
 
 ``353283491150`` được chuỗi này bỏ vào web``kt.gy`` sẽ ra ``RAVEN``
@@ -51,7 +52,7 @@ FLAG``battleCTF{Agb4_y0u_d3y_sm0k3_1gb0?}``
 
 - Đọc Code ASM thì ta thấy XOR nên ta code thui
 - 
-``
+```
 from pwn import*
 from Crypto.Util.number import*
 x = 0x41EF12
@@ -63,6 +64,6 @@ flag = b''
 for i in viet:
     flag = flag + long_to_bytes(i)
 print(flag)
-``
+```
 FLAG``battleCTF{S1mple_MovInShell}
 
